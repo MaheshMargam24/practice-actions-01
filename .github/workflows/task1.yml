@@ -13,7 +13,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Lint the project
-        run: eslint --ext .jsx --fix src
+        run: npm run lint
       - name: Output
         run: echo "Linting the project finished"
   Build:
@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Lint the project
-        run: vite build
+        run: npm run build
       - name: Output
         run: echo "Building the project finished"
   Test:
@@ -45,7 +45,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Lint the project
-        run: vitest run
+        run: npm run test
       - name: Output
         run: echo "Testing the project finished"
 
