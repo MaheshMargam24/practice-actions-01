@@ -10,4 +10,4 @@ jobs:
       - name: Debug output
         run: echo "Trigged based on issues"
       - name: Output contenxt
-        run: echo "${{ toJSON(github) }}"
+        run: echo "${{ toJSON(github.event) }}"
