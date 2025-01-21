@@ -1,0 +1,12 @@
+name: Task2
+on: 
+  issues:
+    [opened, edited, labeled]
+
+jobs:
+  Output:
+    steps:
+      - name: Debug output
+        run: echo "Trigged based on issues"
+      - name: Output contenxt
+        run: echo "${{ toJSON(github) }}"
