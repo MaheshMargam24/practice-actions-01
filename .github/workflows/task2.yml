@@ -1,7 +1,7 @@
 name: Task2
 on: 
   issues:
-    types: [opened, edited]
+    types: [opened, edited, created]
 
 jobs:
   Output:
