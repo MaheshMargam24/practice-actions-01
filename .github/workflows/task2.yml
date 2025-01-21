@@ -5,9 +5,9 @@ on:
 
 jobs:
   Output:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Debug output
-      run: echo "Trigged based on issues"
-    - name: Output contenxt
-      run: echo "${{ toJSON(github) }}"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug output
+        run: echo "Trigged based on issues"
+      - name: Output contenxt
+        run: echo "${{ toJSON(github) }}"
